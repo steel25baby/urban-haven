@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Reddit+Sans+Condensed:wght@200..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --primary-font:"Reddit Sans Condensed", sans-serif;
+  --secondary-font:"Dancing script", cursive;
+  --color-black: #333333;
+  --color-white: #ffffff;
+  --color-primary: #FF3399;
+}
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-logo-text{
+  text-transform: capitalize;
+}
+.header-nav-list{
+ list-style: none;
+ display: flex;
+ gap: 2rem;
+ cursor: pointer;
+}
+.header-nav-link{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--color-black);
+}
+
+.hero{
+  height: 60vh;
+  background-image:url(./assets/homes.jpg) ;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+.hero-subtitle, .hero-maintitle{
+  color: var(--color-white);
+}
+.hero-subtitle{
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+  font-size: 4rem;
+  text-align: center;
+}
+.hero-maintitle{
+  text-transform: uppercase;
+  font-size: 4rem;
+  text-align: center;
+}
+.hero-cta{
+  background-color: var(--color-primary);
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--color-black);
+  padding: 1.5rem 2rem;
+  border-radius: 50px;
+}
+
+
