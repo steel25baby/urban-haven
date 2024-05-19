@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html, body{
+  overflow-x: hidden;
+}
 :root{
   --primary-font:"Reddit Sans Condensed", sans-serif;
   --secondary-font:"Dancing script", cursive;
@@ -11,57 +14,179 @@
   --color-white: #ffffff;
   --color-primary: #FF3399;
 }
+@media screen and (max-width:37.5em) {
+  *{
+    display: flex;
+    flex-direction: column;
+  }
+}
 .header{
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.header-logo-text{
-  text-transform: capitalize;
+.logo-text{
+ text-transform: capitalize; 
 }
 .header-nav-list{
- list-style: none;
- display: flex;
- gap: 2rem;
- cursor: pointer;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
 }
 .header-nav-link{
   text-decoration: none;
   text-transform: capitalize;
+}
+body{
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
   color: var(--color-black);
+}
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-subtitle{
+  font-family: var(--secondary-font);
+  color: var(--color-primary);
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+.title-maintitle{
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+.swimming-pool{
+  padding: 4rem 8rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 3rem;
+}
+.amenities-image--img{
+  width: 30rem;
+  border-radius: 20px;
 }
 
 .hero{
-  height: 60vh;
-  background-image:url(./assets/homes.jpg) ;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
+  padding: 4rem 8rem;
+  display: grid;
+  grid-template-columns: auto auto;
   align-items: center;
-  background-repeat: no-repeat;
+  gap: 3rem;
 }
-.hero-subtitle, .hero-maintitle{
-  color: var(--color-white);
-}
-.hero-subtitle{
-  font-family: var(--secondary-font);
-  text-transform: capitalize;
-  font-size: 4rem;
-  text-align: center;
-}
-.hero-maintitle{
-  text-transform: uppercase;
-  font-size: 4rem;
-  text-align: center;
+.hero-image--img{
+  width: 40rem;
+  border-radius: 20px;
 }
 .hero-cta{
+  display: inline-block;
   background-color: var(--color-primary);
   text-decoration: none;
   text-transform: capitalize;
-  color: var(--color-black);
-  padding: 1.5rem 2rem;
-  border-radius: 50px;
+  color: var(--color-white);
+padding:0.5rem 1rem ;
+border-radius: 30px ;
 }
 
 
+.textbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.menu {
+  padding: 6rem 2rem;
+}
+.about {
+  padding: 4rem 8rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 3rem;
+}
+.about-textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-text {
+  text-align: center;
+  letter-spacing: 1.8px;
+  font-size: 1.4rem;
+  color: #777;
+  line-height: 2;
+}
+.about-cta {
+  /* this will center an inline element */
+  /* display: block; */
+  /* width: max-content; */
+  /* margin: 0 auto; */
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--color-black);
+}
+
+.about-image--img {
+  width: 40rem;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+.about-image--img:hover {
+  transform: scale(1.02);
+}
+.menu-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  row-gap: 4rem;
+  margin-top: 2rem;
+}
+
+.menu-item {
+  width: 37rem;
+}
+
+.menu-item-image {
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.menu-item-image-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.menu-item-title {
+  margin: 1rem 0;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+.menu-item-description {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  text-align: justify;
+  line-height: 1.7;
+  color: #777;
+}
+
+.menu-item-cta {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #888;
+}
