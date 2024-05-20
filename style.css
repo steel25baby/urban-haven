@@ -60,8 +60,10 @@ body{
   letter-spacing: 1.8px;
 }
 .swimming-pool{
+  display: flex;
+  flex-direction: column;
   padding: 4rem 8rem;
-  display: grid;
+  /* display: grid; */
   grid-template-columns: auto auto;
   align-items: center;
   gap: 3rem;
@@ -154,6 +156,11 @@ border-radius: 30px ;
   margin-top: 2rem;
 }
 
+.flex-container{
+  display: flex;
+  flex-direction: column;
+}
+
 .menu-item {
   width: 37rem;
 }
@@ -189,4 +196,95 @@ border-radius: 30px ;
   text-transform: capitalize;
   text-decoration: none;
   color: #888;
+}
+.contact-form{
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+}
+.contact-form form{
+  width: 37rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-input-container{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.form-input-container label{
+  text-transform: capitalize;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+.form-input-container textarea , .form-input-container input{
+  width: 100%;
+  padding: 4px 0px 10px 0px;
+  overflow: hidden;
+  outline: none;
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  font-size: 0.8em;
+}
+.form-input-container textarea::placeholder , .form-input-container input::placeholder{
+  font-size: 0.8em;
+  text-transform: capitalize;
+  opacity: .5;
+}
+form button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 1em 2em;
+}
+form h1{
+  font-size: 1em;
+  text-transform: capitalize;
+  color: var(--color-primary);
+}
+
+@media screen and (max-width:75em) {
+  .hero, .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+@media screen and (max-width:40.7em) {
+ .hero-image, .about-image, .amenities-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+ }
+ .hero-image img, .about-image img, .amenities-image img{
+  width: 100%;
+ }
+ .menu-items-container{
+  justify-content: center;
+  align-items: center;
+ }
+ .menu-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ }
+ .menu-item-description{
+  text-align: center;
+ }
+}
+@media screen and (max-width:38.2em) {
+.menu-item{
+  text-align: center;
+}
+}
 }
