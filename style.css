@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
 html, body{
   overflow-x: hidden;
@@ -211,7 +211,9 @@ border-radius: 30px ;
 .menu-item-cta {
   text-transform: capitalize;
   text-decoration: none;
-  color: #888;
+  color: #333333;
+  /* background-color: #FF3399;
+  padding: 1.5em 2em; */
 }
 .contact-form{
   width: 100%;
@@ -306,6 +308,9 @@ form h1{
  .menu-item-description{
   text-align: center;
  }
+ .contact-form form{
+  width: 100%;
+  }
 }
 @media screen and (max-width:38.2em) {
 .menu-item{
